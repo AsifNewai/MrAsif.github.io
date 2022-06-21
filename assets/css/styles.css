@@ -1097,11 +1097,11 @@ background-color: var(--text-color-light);
     width: 320px;
   }
   .section{
-    padding: 10rem 0 2rem;
+    padding: 9rem 0 2rem;
   }
-  /* .home{
-    padding: 7rem 0 2rem;
-  } */
+  .about{
+    margin-bottom: 2rem;
+  }
   .services__container{
     grid-template-columns: repeat((3,238px));
   }
