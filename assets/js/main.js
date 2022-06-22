@@ -154,3 +154,24 @@ themeButton.addEventListener('click' , ()=>{
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// -----------------------------------------------------------------
+
+// const clickSetting = document.querySelector('.set-color')
+// const closeClick = document.querySelector('.close1')
+// var style = getComputedStyle(document.body)
+// clickSetting.addEventListener('click',()=>{
+//     document.querySelector('.add').classList.add('color-change')
+//     clickSetting.style.color = style.getPropertyValue('--first-color')
+// })
+
+// closeClick.addEventListener('click',()=>{
+//     document.querySelector('.add').classList.remove('color-change')
+//     clickSetting.style.removeProperty('color');
+// })
+
+// const setActiveStyle = (val)=>{
+//     document.documentElement.style.setProperty('--hue-color', val);
+// }
+

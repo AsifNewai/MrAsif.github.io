@@ -80,6 +80,7 @@ body.dark-theme{
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
+
 /*========== Button Dark/Light ==========*/
 .nav__btns{
   display: flex;
@@ -94,6 +95,68 @@ body.dark-theme{
 .change-theme:hover{
   color: var(--first-color);
 }
+/* .set-color{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1-5);
+  cursor: pointer;
+}
+.set-color:hover{
+  color: var(--first-color);
+}
+.color-change{
+  position: absolute;
+  right: 15rem;
+  top: 55px;
+  width: 165px;
+  height: 65px;
+  z-index: 101;
+  box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+  border-radius: 5px;
+  background: rgba(244, 240, 234, 0.579);
+  transition: all .3s ease;
+}
+.div1{
+  display: flex;
+  justify-content: space-between;
+}
+.div1 h5{
+  margin: 0 0 0 8px;
+  font-size: 16px;
+  font-weight: 1000;
+  color: rgba(29, 27, 27, 0.788);
+}
+
+.div1 i {
+    margin: 0 8px 0 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.colors{
+  text-align: center;
+}
+.colors span{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.color-1{
+  background-color: #6e57e0;
+}
+.color-2{
+  background-color: #57e089;
+}
+.color-3{
+  background-color: #e0ce57;
+}
+.color-4{
+  background-color: #e05785;
+}
+.color-5{
+  background-color: #57e0b2;
+} */
+
 
 /*==================== BASE ====================*/
 * {
@@ -130,6 +193,9 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+.name{
+  color: var(--first-color);
 }
 
 /*==================== REUSABLE CSS CLASSES ====================*/
@@ -998,6 +1064,9 @@ background-color: var(--text-color-light);
   .change-theme{
     margin: 0;
   }
+  /* .change-color{
+    margin-right: .5rem;
+  } */
   .home__container{
     row-gap: 5rem;
   }
@@ -1101,6 +1170,9 @@ background-color: var(--text-color-light);
   }
   .about{
     margin-bottom: 2rem;
+  }
+  .contact__container{
+    margin-top: -2rem;
   }
   .services__container{
     grid-template-columns: repeat((3,238px));
