@@ -175,3 +175,11 @@ themeButton.addEventListener('click' , ()=>{
 //     document.documentElement.style.setProperty('--hue-color', val);
 // }
 
+// ====================================================================
+
+var typed = new Typed('.typing',{
+    strings:['Web Developer','Coder','Web Designer'],
+    typeSpeed:100,
+    BackSpeed:100,
+    loop:true
+})

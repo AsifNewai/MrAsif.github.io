@@ -1171,9 +1171,9 @@ background-color: var(--text-color-light);
   .about{
     margin-bottom: 2rem;
   }
-  .contact__container{
-    margin-top: -2rem;
-  }
+  /* .contact{
+    margin-top: -5rem;
+  } */
   .services__container{
     grid-template-columns: repeat((3,238px));
   }
