@@ -135,7 +135,7 @@ window.addEventListener('scroll',scrollUp)
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
-const icon = document.querySelector('.s-icon i')
+const icon = document.querySelector('.set-color')
 
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
@@ -199,7 +199,6 @@ function touchEnd(){
         }
     }
 }
-// 2
 
 window.addEventListener('scroll',()=>{
     if(document.querySelector('.style-switcher').classList.toggle('open')){
@@ -221,6 +220,3 @@ var typed = new Typed('.typing',{
     BackSpeed:130,
     loop:true
 })
-
-
-// #37b182
