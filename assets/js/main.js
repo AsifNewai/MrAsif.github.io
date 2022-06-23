@@ -135,11 +135,15 @@ window.addEventListener('scroll',scrollUp)
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
+const icon = document.querySelector('.s-icon i')
 
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentTheme = () => {
+    document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+    document.body.classList.contains(darkTheme) ? icon.style.color = "#FFF" : icon.style.color = "#000"
+}
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
 if(selectedTheme){
@@ -158,22 +162,56 @@ themeButton.addEventListener('click' , ()=>{
 
 // -----------------------------------------------------------------
 
-// const clickSetting = document.querySelector('.set-color')
-// const closeClick = document.querySelector('.close1')
-// var style = getComputedStyle(document.body)
-// clickSetting.addEventListener('click',()=>{
-//     document.querySelector('.add').classList.add('color-change')
-//     clickSetting.style.color = style.getPropertyValue('--first-color')
-// })
+const styleSwitcherToggle = document.querySelector('.style-switcher-toggler')
 
-// closeClick.addEventListener('click',()=>{
-//     document.querySelector('.add').classList.remove('color-change')
-//     clickSetting.style.removeProperty('color');
-// })
+styleSwitcherToggle.addEventListener('click',()=>{
+    document.querySelector('.style-switcher').classList.toggle('open');
+})
+// 1
+var startX, startY, moveX, moveY;
+//here clientX, and clientY means X and Y coordinates
+function touchStart(e){
+    startX = e.touches[0].clientX ;
+    startY = e.touches[0].clientY ;
+}
 
-// const setActiveStyle = (val)=>{
-//     document.documentElement.style.setProperty('--hue-color', val);
-// }
+function touchMove(e){
+    moveX = e.touches[0].clientX ;
+    moveY = e.touches[0].clientY ;
+}
+function touchEnd(){
+    if(startX+100 < moveX){
+        if(document.querySelector('.style-switcher').classList.toggle('open')){
+            document.querySelector('.style-switcher').classList.remove('open')
+        }
+    }else if(startX-100 > moveX){
+        if(document.querySelector('.style-switcher').classList.toggle('open')){
+            document.querySelector('.style-switcher').classList.remove('open')
+        }
+    }
+    if(startY+100 < moveY){
+        if(document.querySelector('.style-switcher').classList.toggle('open')){
+            document.querySelector('.style-switcher').classList.remove('open')
+        }
+    }else if(startY-100 > moveY){
+        if(document.querySelector('.style-switcher').classList.toggle('open')){
+            document.querySelector('.style-switcher').classList.remove('open')
+        }
+    }
+}
+// 2
+
+window.addEventListener('scroll',()=>{
+    if(document.querySelector('.style-switcher').classList.toggle('open')){
+        document.querySelector('.style-switcher').classList.remove('open')
+    }
+})
+
+
+
+const setActiveStyle = (val)=>{
+    document.documentElement.style.setProperty('--hue-color', val);
+}
 
 // ====================================================================
 
@@ -183,4 +221,6 @@ var typed = new Typed('.typing',{
     BackSpeed:130,
     loop:true
 })
+
+
 // #37b182

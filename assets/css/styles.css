@@ -95,42 +95,17 @@ body.dark-theme{
 .change-theme:hover{
   color: var(--first-color);
 }
-.style-switcher{
-  position: fixed;
-  right: 0;
-  top: 50px;
-  padding: 7px;
-  width: 175px;
-  border: 1px solid rgba(0, 0, 0, 0.708);
-  background-color: rgba(255, 235, 205, 0.597);
-  z-index: 101;
-  border-radius: 5px;
-  /* transition: all .5s ease; */
-  transform: translateX(100%);
-}
-.style-switcher .s-icon.open{
-  transform: translateX(-25px);
-}
-.style-switcher .s-icon{
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  right: 100%;
-  margin-right: 5px;
-  border-radius: 50%;
-}
-.style-switcher .style-switcher-toggler{
-  top: 3px;
-}
-.style-switcher .s-icon i{
-  font-size: 23px;
+.set-color{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
   color: black;
   cursor: pointer;
-  transition: all .1s ease;
 }
-.style-switcher .s-icon i:hover{
+.set-color:hover{
   color: var(--first-color);
 }
+
 .style-switcher h4{
   margin: 0 0 10px;
   color: black;
@@ -141,6 +116,7 @@ body.dark-theme{
 .style-switcher .colors{
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
   justify-content: space-around;
 }
 .style-switcher .colors span{
@@ -165,6 +141,127 @@ body.dark-theme{
 .color-5{
   background-color: #00ffaa;
 }
+@media screen and (min-width:1400px) {
+  .style-switcher{
+    position: fixed;
+    right: 13rem;
+    top: -1rem;
+    padding: 7px;
+    width: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.708);
+    background-color: rgba(255, 235, 205, 0.597);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all .5s ease;
+    transform: translateY(-100%);
+  }
+  .style-switcher.open{
+    transform: translateY(100%);
+  }
+  .style-switcher .style-switcher-toggler{
+    top: 3px;
+  }
+}
+@media screen and (min-width:1300px) {
+  .style-switcher{
+    position: fixed;
+    right: 14rem;
+    top: -1rem;
+    padding: 7px;
+    width: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.708);
+    background-color: rgba(255, 235, 205, 0.597);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all .5s ease;
+    transform: translateY(-100%);
+  }
+  .style-switcher.open{
+    transform: translateY(100%);
+  }
+  .style-switcher .style-switcher-toggler{
+    top: 3px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1299px){
+  .style-switcher{
+    position: fixed;
+    right: 3rem;
+    top: -1rem;
+    padding: 7px;
+    width: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.708);
+    background-color: rgba(255, 235, 205, 0.597);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all .5s ease;
+    transform: translateY(-100%);
+  }
+  .style-switcher.open{
+    transform: translateY(100%);
+  }
+  .style-switcher .style-switcher-toggler{
+    top: 3px;
+  }
+}
+@media screen and (min-width:768px) and (max-width:1000px){
+  .style-switcher{
+    position: fixed;
+    right: 0rem;
+    top: -1rem;
+    padding: 7px;
+    width: 175px;
+    border: 1px solid rgba(0, 0, 0, 0.708);
+    background-color: rgba(255, 235, 205, 0.597);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all .5s ease;
+    transform: translateY(-100%);
+  }
+  .style-switcher.open{
+    transform: translateY(100%);
+  }
+  .style-switcher .style-switcher-toggler{
+    top: 3px;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:767px){
+  .style-switcher{
+    position: fixed;
+    right: -6rem;
+    top: 1rem;
+    padding: 7px;
+    width: 110px;
+    border: 1px solid rgba(0, 0, 0, 0.708);
+    background-color: rgba(255, 235, 205, 0.597);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all .5s ease;
+    transform: translateX(100%);
+  }
+  .style-switcher.open{
+    transform: translateX(-100%);
+  }
+  .style-switcher .style-switcher-toggler{
+    top: 3px;
+  }
+  .style-switcher h4{
+    margin: 0 0 10px;
+    color: black;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .style-switcher .colors span{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+}
+
 
 /*==================== BASE ====================*/
 * {
