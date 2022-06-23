@@ -179,7 +179,8 @@ themeButton.addEventListener('click' , ()=>{
 
 var typed = new Typed('.typing',{
     strings:['Software Engineer','Web Developer','Coder','Web Designer'],
-    typeSpeed:100,
-    BackSpeed:100,
+    typeSpeed:130,
+    BackSpeed:130,
     loop:true
 })
+// #37b182
