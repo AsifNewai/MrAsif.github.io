@@ -673,9 +673,14 @@ img {
   background-color: var(--first-color);
 }
 
-.skills__html{
-  width: 80%;
+.skills__javascript{
+  width: 60%;
 }
+
+.skills__react_native{
+  width: 40%;
+}
+
 .skills__css{
   width: 70%;
 }
@@ -688,10 +693,17 @@ img {
 
 
 .skills__nodejs{
-  width: 30%;
+  width: 70%;
+}
+.skills__expressjs{
+  width: 60%;
+}
+
+.skills__postgis{
+  width: 40%;
 }
 .skills__firebase{
-  width: 60%;
+  width: 50%;
 }
 
 .skills__c{
